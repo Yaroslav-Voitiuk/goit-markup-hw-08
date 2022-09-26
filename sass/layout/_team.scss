@@ -1,0 +1,65 @@
+.team {
+    background-color: var(--team-background-color);
+}
+
+.team__card-position {
+    display: flex;
+    gap: 30px;
+}
+
+.team__card-shadow {
+    background-color: var(--team-background-card-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+}
+
+.team__worker-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team__worker-cards {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team__job-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    color: var(--body-text-color);
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social-list-icon {
+    fill: currentColor;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-link-color);
+    transition: background-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--blue-text-color);
+        color: var(--white-text-color);
+    }
+}
