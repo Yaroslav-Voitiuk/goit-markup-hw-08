@@ -14,7 +14,7 @@
 <body>
     <!--ШАПКА-->
     <header class="page-header">
-        <div class="container">
+        <div class="container page-header__container">
             <nav class="header-container">
                 <a class="logo link" href="./index.html">Web<span class="logo__black">Studio</span></a>
                 <ul class="menu-nav list">
@@ -23,6 +23,11 @@
                     <li class="menu-nav__item"><a class="menu-nav__link link" href="#">Контакт</a></li>
                 </ul>
             </nav>
+            <button type="button" class="open-mobile-menu-btn js-open-menu"> 
+                <svg class="open-mobile-menu-btn__icon">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg> 
+            </button>
             <ul class="list contact-nav"> 
                 <li>
                     <a class="contact-nav__email link" href="mailto:info@devstudio.com">
@@ -38,6 +43,16 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu js-menu-container" >
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn js-close-menu" >
+                    <svg class="mobile-menu__icon-close">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+
+            </div>
         </div>
     </header>
     <main>
@@ -434,7 +449,7 @@
             </form>
         </div>
     </div> -->
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="js/modal.js"></script>
 </body>
 </html>

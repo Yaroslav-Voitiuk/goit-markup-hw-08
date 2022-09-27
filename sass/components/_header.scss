@@ -1,6 +1,38 @@
+.menu-nav {
+    display: none;
+}
 
+.contact-nav__email {
+    display: none;
+}
 
+.contact-nav__phonenumber {
+    display: none;
+}
 
+.page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.open-mobile-menu-btn {
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    
+}
+
+.open-mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 // .page-header {
