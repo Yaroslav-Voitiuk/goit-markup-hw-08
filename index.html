@@ -78,7 +78,7 @@
             </div>
         </section>
         <!--ОСОБЛИВОСТІ І ПЕРЕВАГИ-->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
             <h2 class="visually-hidden">Наші особливості</h2>
                 <ul class="list features">
@@ -120,34 +120,50 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!--Опис діяльності-->
-        <!-- <section class="section products">
+        <section class="section products">
             <div class="container">
                 <h2 class="body-title">Чим ми займаємось</h2>
                 <ul class="list products__img">
                     <li class="products__cards">
-                        <img src="./images/box1.jpg" alt="Код на планшеті" width = "370" height = "294" />
+                        <img
+                        srcset="./images/notepad@2x.jpg 2x"
+                        src="./images/notepad.jpg" alt="Код на планшеті" width = "370" height = "294" />
                         <p class="products__overley">Десктопні додатки</p>
                     </li>
                     <li class="products__cards">
-                        <img src="./images/box2.jpg" alt="Телефон" width = "370" height = "294" />
+                        <img 
+                        srcset="./images/phones@2x.jpg 2x"
+                        src="./images/phones.jpg" alt="Телефон" width = "370" height = "294" />
                         <p class="products__overley">Мобільні додатки</p>
                     </li>
                     <li class="products__cards">
-                        <img src="./images/box3.jpg" alt="Колір" width = "370" height = "294" />
+                        <img
+                        srcset="./images/palette@2x.jpg 2x"
+                        src="./images/palette.jpg" alt="Колір" width = "370" height = "294" />
                         <p class="products__overley">Дизайнерські рішення</p>
                     </li>                
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!--Опис команди-->
-        <!-- <section class="team section">
+        <section class="team section">
             <div class="container ">
                 <h2 class="body-title">Наша команда</h2>
                     <ul class="list team__card-position">
                         <li class="team__card-shadow">
-                            <img src=" ./images/img-3.jpg" alt="Ігор Дем'яненко" width = "270" height = "260" />
+                            <picture>
+                                <source srcset="./images/worker1.jpg 1x, ./images/worker1@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="./images-tablet/worker1-tab@1x.jpg 1x, ./images-tablet/worker1-tab@2x.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="./images-mob/worker1mob@1x.jpg 1x, ./images.mob/worker1mob@2x.jpg 2x" 
+                                    media="(max-width: 767px)">
+                                    <img src="./images-mob/worker1mob@1x.jpg" alt="Ігор Дем'яненко" width = "270" height = "260" />
+                            </picture>
                             <div class="team__worker-cards">
                                 <h3 class="team__worker-name">Ігор Дем'яненко</h3>
                                 <p class="team__job-title">Product Designer</p>
@@ -296,7 +312,7 @@
                         </li>
             </div>
         </section>
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="body-title">Постійні клієнти</h2>
                     <ul class="list client-list">
@@ -344,8 +360,8 @@
                         </li>
                     </ul>
             </div>
-        </section>
-    </main> -->
+        </section> -->
+    </main>
     <!--Підвал-->
     <!-- <footer class="page-footer">
         <div class="container footer-box">

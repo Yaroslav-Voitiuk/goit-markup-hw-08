@@ -1,6 +1,17 @@
+
+
+
 .products {
+    display: none;
     padding-top: 0;
+
+@media screen and (min-width: 1200px) {
+        display: flex;
+        padding-top: 0;
 }
+}
+
+@media screen and (min-width: 1200px) {
 
 .products__cards {
     position: relative;
@@ -8,6 +19,8 @@
 
 .products__img {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -25,4 +38,5 @@
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+}
 }

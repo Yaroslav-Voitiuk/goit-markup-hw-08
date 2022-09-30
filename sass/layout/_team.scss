@@ -3,9 +3,19 @@
 }
 
 .team__card-position {
-    display: flex;
-    gap: 30px;
+    display: block;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
 }
+
+    @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+}
+}
+
 
 .team__card-shadow {
     background-color: var(--team-background-card-color);
