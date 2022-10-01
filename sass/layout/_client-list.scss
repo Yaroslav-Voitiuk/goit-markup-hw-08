@@ -1,8 +1,13 @@
 .client-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 30px;
+
+    @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+    }
 }
 
 .client-list__logobox {
@@ -13,7 +18,7 @@
     border: 1px solid;
     border-color: var(--background-solution-color);
     color: var(--icon-link-color);
-    width: 170px;
+    width: 210px;
     height: 92px;
     transition: border-color var(--transition-dur-and-func), color var(--transition-dur-and-func);
 
@@ -21,6 +26,14 @@
     &:focus {
         border-color: var(--blue-text-color);
         color: var(--blue-text-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
     }
 }
 
